@@ -1,8 +1,10 @@
 spring:
-  data:
-    mongodb:
-      url: mongodb+srv://aseem:2003@cluster0.yxh8f.mongodb.net/virtualmed
-      database: virtualmed
+  datasource:
+    url: jdbc:h2:mem:virtualMed
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+
 
 application:
   security:
