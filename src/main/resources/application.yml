@@ -12,10 +12,6 @@ spring:
         format_sql: true
 
   # For formatting sql query in console
-
-
-
-
 application:
   security:
     jwt:
