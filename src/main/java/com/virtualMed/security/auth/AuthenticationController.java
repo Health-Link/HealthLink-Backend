@@ -28,8 +28,6 @@ public class AuthenticationController {
     return ResponseEntity.ok(service.register(request));
   }
 
-
-
   @ApiOperation(value = "Authenticates a user")
   @ApiResponses(value = {
           @ApiResponse(code = 200, message = "Successfully authenticated the user"),

@@ -1,9 +1,19 @@
 spring:
   datasource:
-    url: jdbc:h2:mem:virtualMed
-    username: sa
-    password: password
-    driverClassName: org.h2.Driver
+    url: jdbc:postgresql://localhost:5432/virtualMed
+    username: postgres
+    password: eden258
+# Hibernate configuration
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+
+  # For formatting sql query in console
+
+
 
 
 application:
