@@ -40,11 +40,11 @@ public class MeetingReservationController {
         service.deleteMeetingReservation(id);
     }
 
-    @GetMapping(params = {"start", "end"})
-    public List<Meeting> getMeetingReservationsBetween(@RequestParam("start") String start, @RequestParam("end") String end) {
-        LocalDateTime startTime = LocalDateTime.parse(start, DateTimeFormatter.ISO_DATE_TIME);
-        LocalDateTime endTime = LocalDateTime.parse(end, DateTimeFormatter.ISO_DATE_TIME);
-        return service.getMeetingReservationsBetween(startTime, endTime);
-    }
+//    @GetMapping(params = {"start", "end"})
+//    public List<Meeting> getMeetingReservationsBetween(@RequestParam("start") String start, @RequestParam("end") String end) {
+//        LocalDateTime startTime = LocalDateTime.parse(start, DateTimeFormatter.ISO_DATE_TIME);
+//        LocalDateTime endTime = LocalDateTime.parse(end, DateTimeFormatter.ISO_DATE_TIME);
+//        return service.getMeetingReservationsBetween(startTime, endTime);
+//    }
 }
 

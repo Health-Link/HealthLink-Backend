@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 import java.util.Date;
-import java.util.List;
 
 @Entity
 @Data
@@ -29,7 +28,6 @@ public class Meeting {
     @Column
     private Date dateTime;
 
-    // TODO brone meeting using dto
     @NotBlank
     @Column(name = "participantId")
     private String participantId;

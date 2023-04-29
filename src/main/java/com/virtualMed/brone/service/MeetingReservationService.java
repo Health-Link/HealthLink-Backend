@@ -40,8 +40,8 @@ public class MeetingReservationService {
         repository.deleteById(id);
     }
 
-    public List<Meeting> getMeetingReservationsBetween(LocalDateTime start, LocalDateTime end) {
-        return repository.findByStartTimeBetween(start, end);
-    }
+//    public List<Meeting> getMeetingReservationsBetween(LocalDateTime start, LocalDateTime end) {
+//        return repository.findByStartTimeBetween(start, end);
+//    }
 }
 
