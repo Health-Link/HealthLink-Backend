@@ -12,6 +12,8 @@ import java.util.List;
 @RestController
 @RequestMapping("/api/v2/reservations")
 @RequiredArgsConstructor
+@CrossOrigin("http://localhost:4200/")
+
 public class MeetingReservationController {
 
     private final MeetingReservationService service;
